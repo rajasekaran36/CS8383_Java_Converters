@@ -41,19 +41,39 @@ public class Currency {
         	currency_choice = input.nextInt();
         	switch(currency_choice){
         	case 1:
-        		System.out.println("Enter in DOLLERS");
+        		System.out.println("Enter in DOLLER");
         		money = input.nextDouble();
-        		System.out.println(money+" DOLLERS is equal to "+Currency.convertDOLLARtoINR(money)+" INDIAN RUPEES");
+        		System.out.println(money+" DOLLER is equal to "+Currency.convertDOLLARtoINR(money)+" INR");
         		break;
         	case 2:
         		System.out.println("Enter in EURO");
         		money = input.nextDouble();
-        		System.out.println(money+" EURO is equal to "+Currency.covertEUROtoINR(money)+" INDIAN RUPEES");
+        		System.out.println(money+" EURO is equal to "+Currency.covertEUROtoINR(money)+" INR");
         		break;
         	case 3:
         		System.out.println("Enter in YEN");
         		money = input.nextDouble();
-        		System.out.println(money+" YEN is equal to "+Currency.convertYENtoINR(money)+" INDIAN RUPEES");
+        		System.out.println(money+" YEN is equal to "+Currency.convertYENtoINR(money)+" INR");
+        		break;
+        	case 4:
+        		System.out.println("Enter in INR");
+        		money = input.nextDouble();
+        		System.out.println(money+" INR is equal to "+Currency.convertINRtoDOLLAR(money)+" DOLLORS");
+        		break;
+        	case 5:
+        		System.out.println("Enter in INR");
+        		money = input.nextDouble();
+        		System.out.println(money+" INR is equal to "+Currency.covertINRtoEURO(money)+" EURO");
+        		break;
+        	case 6:
+        		System.out.println("Enter in INR");
+        		money = input.nextDouble();
+        		System.out.println(money+" INR is equal to "+Currency.convertINRtoYEN(money)+" YEN");
+        		break;
+        	case 7:
+        		break;
+        	default:
+        		System.out.println("Please choose valid option");
         		break;
         	}
         }

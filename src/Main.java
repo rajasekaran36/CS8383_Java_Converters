@@ -19,20 +19,18 @@ public class Main {
         		Currency.userChoice();
         		break;
         	case 2:
-        		convertDistance();
+        		Distance.userChoice();
         		break;
         	case 3:
-        		convertTime();
+        		Time.userChoice();
+        		break;
+        	case 4:
+        		break;
+        	default:
+        		System.out.println("Please choose valid option");
         		break;
         	}
         }
         System.out.println("Thank You !!!!");
-    }
-    
-    public static void convertDistance(){
-    	
-    }
-    public static void convertTime() {
-    	
     }
 }
